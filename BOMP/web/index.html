@@ -1,0 +1,186 @@
+<!-- Code By Simon Cichosz-->
+
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BOMP (Body Composition Prediction)</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto calculate-form">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">BOMP (<b>Bo</b>dy Co<b>m</b>position <b>P</b>rediction)</h1>
+            <form id="body-form">
+
+              <!-- -->  
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Gender </span>
+                  </div>
+                  <select id="gender" name="gender">
+                    <option value="1" selected>male</option>
+                    <option value="2">female</option>
+                  </select>
+                </div>
+              </div>
+              <!-- -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Age (years)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="age"
+                    placeholder="age in years"
+                    step=.01
+                  />
+                </div>
+              </div>
+              <!-- -->
+              <!-- -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Weight (kg)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="weight"
+                    placeholder="weight in kg"
+                    step=.01
+                  />
+                </div>
+              </div>
+              <!-- --> 
+              <!-- -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Height (cm)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="height"
+                    placeholder="height in cm"
+                    step=.01
+                  />
+                </div>
+              </div>
+              <!-- -->
+
+              <!-- -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Waits circumference (cm)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="wc"
+                    placeholder="Waits circumference in cm"
+                    step=.01
+                  />
+                </div>
+              </div>
+              <!-- -->
+              <!-- -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Triceps skinfold (mm)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="ts"
+                    placeholder="triceps skinfold in mm"
+                    step=.01
+                  />
+                </div>
+              </div>
+              <!-- -->
+
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block"
+                />
+              </div>
+            </form>
+            <!-- Loader -->
+            <div id="loading">
+              <img src="https://media.giphy.com/media/swhRkVYLJDrCE/giphy.gif" alt="loading"/>
+            </div>
+            <!-- Result -->
+            <div id="result">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Estimated lean body mass (kg)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="lbm"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Estimated fat mass (kg)</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="fm"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <!-- Disclaimer-->
+              <div id="dis">
+                    <b>Disclaimer</b>
+                    <p >The information from this app is provided “as is” without any representations or warranties, express, implied or insurance. The app makes no representations or warranties in relation to the information. You must not rely on the information from this app as an alternative to medical advice from your doctor or other professional healthcare provider. If you have any specific questions about any medical matter you should consult your doctor or other professional healthcare provider. If you think you may be suffering from any medical condition you should seek immediate medical attention. You should never delay seeking medical advice, disregard medical advice, or discontinue medical treatment because of information from this app.</p>
+               </div>
+            </div>
+            <!-- Ref -->
+            <div id="ref">
+                <b >References</b>
+                <p >Cichosz, SL, Rasmussen, NH-H, Vestergaard, P & Hejlesen, O 2020, 'Precise prediction of total-body lean and fat mass from anthropometric and demographic data: development and validation of neural network models', <i>Journal of Diabetes Science and Technology</i>. <a href="https://doi.org/10.1177/1932296820971348" target="blank">https://doi.org/10.1177/1932296820971348</a></p>
+            </div>
+            
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+             
+  </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script  src="function.js"></script>
+
+</body>
+</html>

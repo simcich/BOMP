@@ -1,6 +1,9 @@
 # BOMP
 BOMP (Body Composition Prediction)
 
+# Demo
+https://git.io/JRw3g
+
 ## Cite as
 Simon Cichosz. (2022). BOMP (Body Composition Prediction) (v0.2-alpha). Zenodo. https://doi.org/10.5281/zenodo.5819543
 

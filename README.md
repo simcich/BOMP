@@ -10,4 +10,8 @@ Simon Cichosz. (2022). BOMP (Body Composition Prediction) (v0.2-alpha). Zenodo. 
 [![DOI](https://zenodo.org/badge/394597069.svg)](https://zenodo.org/badge/latestdoi/394597069)
 
 ## References
+Cichosz SL, Vestergaard P, Hejlesen O. Body Composition Prediction-BOMP: A New Tool for Assessing Fat and Lean Body Mass. J Diabetes Sci Technol. 2022 Feb 9:19322968221076560. doi: 10.1177/19322968221076560. 
+
 Cichosz, SL, Rasmussen, NH-H, Vestergaard, P & Hejlesen, O 2020, 'Precise prediction of total-body lean and fat mass from anthropometric and demographic data: development and validation of neural network models', Journal of Diabetes Science and Technology. https://doi.org/10.1177/1932296820971348
+
+
